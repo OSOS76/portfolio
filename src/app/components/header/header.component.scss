@@ -1,0 +1,110 @@
+.navbar {
+  width: 90%;
+  margin: 10px auto;
+  background-color: rgba(109, 93, 72, 0) !important;
+}
+
+.navbar a {
+  color: white;
+  transition: 0.5s;
+  content: "";
+}
+
+.navbar .nav-link:hover {
+  color: #6a9cffd7;
+  transform: scale(1.03);
+}
+
+.navbar a h1 {
+  font-size: 35px;
+}
+
+.navbar a h1 span {
+  color: #6c8ac8;
+  transition: 0.4s all ease-in-out;
+}
+
+.navbar a h1 span:hover {
+  color: white;
+}
+
+.nav-link {
+  font-size: 20px;
+  margin: 0px 20px;
+  font-weight: 500;
+}
+
+.navbar-toggler {
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar .nav-link::before {
+  transition: 0.5s linear;
+  position: absolute;
+  content: "";
+  bottom: -1px;
+  left: 100;
+  width: 0%;
+  height: 3px;
+  background-color: #6a9cffd7;
+}
+
+.navbar a:hover::before {
+  /* width: 60px; */
+  width: 65px;
+}
+
+nav a {
+  margin: auto;
+  /* text-align: center; */
+  margin: 10px;
+  transition: 0.5s all ease-in-out !important;
+}
+
+.navbar-brand {
+  color: #518bfff3 !important;
+  text-shadow: 0px 0px 20px #0224bc !important;
+}
+
+.navbar-brand:hover {
+  color: rgba(0, 76, 255, 0.995) !important;
+  /* text-shadow: 0px 0px 10px #000000 !important; */
+  transform: scale(1.02);
+}
+
+.navbar-brand span {
+  color: #ffffff8d !important;
+}
+
+@media (max-width: 990px) {
+  .navbar-collapse {
+    width: 100%;
+    transition: 0.6s all ease-in-out !important;
+  }
+
+  .navbar .nav-link::before {
+    transition: 0.5s linear;
+    position: absolute;
+    content: "";
+    bottom: -1px;
+    left: 100;
+    width: 0%;
+    height: 3px;
+    background-color: #6a9cffd7;
+  }
+
+  .navbar a:hover::before {
+    /* width: 60px; */
+    width: 75px;
+  }
+
+  .navbar a {
+    margin: auto;
+    /* text-align: center; */
+    margin: 5px;
+    transition: 0.5s all ease-in-out !important;
+    font-size: 20px;
+    letter-spacing: 1.1px;
+  }
+}
