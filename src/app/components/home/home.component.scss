@@ -1,18 +1,28 @@
 .section1 {
   /* background-color: #000000; */
-  width: 100%;
-  display: flex;
-
   /* text-align: center; */
-  /* background-color: #397bff; */
+  // background-color: #397bff;
   /* display: flex; */
-  margin-top: 110px;
+  margin: 0px;
+  margin-top: 100px;
 }
 
 .col-12 {
   align-items: center;
-  margin: auto;
   justify-content: space-around;
+}
+
+.main {
+  display: flex;
+  justify-content: space-evenly;
+  // background-color: #030e25 !important;
+}
+.section1 .left {
+  /* background-color: #397bff; */
+  margin-top: 50px;
+  width: 40%;
+  /* margin:  auto; */
+  /* margin: 80px; */
 }
 
 .blur {
@@ -37,21 +47,6 @@
   margin: 10px;
 }
 
-// .imagecontSmall {
-//     background-size: cover;
-//     background-position: center;
-//     position: relative;
-//     /* left: 55px; */
-//     width: 300px;
-//     height: 300px;
-//     border-radius: 50%;
-//     box-shadow: 10px 5px 100000px 2px #0055ff5e;
-//     transition: 0.7s all ease-in-out;
-
-//     /* background-color: #7cf03d; */
-
-// }
-
 .section1 .imagecont:hover {
   box-shadow: 10px 5px 100000px 2px #0055ff8f;
 }
@@ -66,20 +61,13 @@
   width: 300px;
 }
 
-.section1 .left {
-  /* background-color: #397bff; */
-  margin-top: 70px;
-  /* margin:  auto; */
-  /* margin: 80px; */
-}
-
 .section1 .left h1 {
-  font-size: 40px;
+  font-size: 37px;
 }
 
 .section1 .left .typeWriter {
   font-weight: 500;
-  font-size: 45px;
+  font-size: 47px;
 }
 
 .section1 .typeWriter-text {
@@ -88,7 +76,7 @@
 }
 
 .section1 .left p {
-  width: 80%;
+  width: 65%;
   font-size: 18px;
 }
 
@@ -127,7 +115,7 @@ h4 {
   color: rgb(255, 255, 255);
   border: #6c8ac8 1.5px solid;
   transition: all 0.5s;
-  width: 60%;
+  width: 50%;
   margin: 20px;
 }
 
@@ -163,8 +151,57 @@ a i:hover {
   border: 2px solid rgb(255, 255, 255) !important;
   color: #82acff;
 }
+// --------------------------section2-----------------------------------------------
+.section2 h2 {
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 140px;
+}
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.card {
+  margin: 20px;
+  width: 25rem;
+  background-color: #ffffff00 !important;
+  text-align: center;
+  border: 2px solid #9f9f9f54;
+  box-shadow: 0px 0px 10px 2px #57575793 ;
+  color: white;
+  transition:  all 0.5s ease-in-out;
+}
+.card:hover {
+
+  background-color: #ffffff00 !important;
+  border: 2px solid #707070;
+  box-shadow: 0px 0px 10px 2px #57575753 ;
+  color: white;
+  transform: scale(1.05);
+}
+.card img {
+  width: 100%;
+  padding: 5px;
+  transition: all 0.5s ease-in;
+}
+.card img:hover{
+  transform: scale(1.03);
+}
+
 
 @media (max-width: 990px) {
+  .main {
+    flex-direction: column;
+  }
+  .left {
+    width: 100% !important;
+  }
+  .section1 .left .typeWriter {
+    font-weight: 500;
+    font-size: 45px;
+  }
+
   .section1 .imagecont {
     margin: 30px auto;
     height: 380px;
@@ -175,9 +212,10 @@ a i:hover {
   }
 
   .left {
-    margin: 40px;
+    // margin: 40px;
+    padding: 0px 30px;
   }
   .section1 {
-    margin-top: 40px;
+    margin-top: 0px;
   }
 }
